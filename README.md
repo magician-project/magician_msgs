@@ -22,6 +22,15 @@ An example is the [`deterministic_orienteering.srv`](https://github.com/magician
 
 The main exception to this rule is for messages representing *standard* data types can could be shared among different entities, such as the [`defect.msg`](https://github.com/magician-project/magician_msgs/blob/main/msg/defect.msg) message the lives within the `msg` folder.
 
+## Contents
+
+```{toctree}
+:maxdepth: 1
+
+docs/common_msgs.md
+docs/rt_services.md
+```
+
 
 ## Building the documentation
 If you want to build locally the webpage for the documentation, you can use the provided `Makefile`. 

@@ -3,5 +3,6 @@
 
 magician_msgs/defect[] defects
 float64[]: travel_times
+float64: tack_time
 ---
 magician_msgs/defect[] roadmap

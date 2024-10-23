@@ -1,6 +1,9 @@
+MD_FILES = $(wildcard docs/%.md)
+
 doc: 
+	echo $(MD_FILES)
 	echo "Building documentation"
-	sphinx-build --conf-dir docs . html README.md
+	sphinx-build --conf-dir docs . html 
 
 docs/%.md: %.md
 	@echo "Creating symboling link for $<"
