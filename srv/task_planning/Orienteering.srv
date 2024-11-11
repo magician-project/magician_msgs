@@ -2,9 +2,9 @@
 # This is a temporary placeholder for demonstration purposes.
 
 
-magician_msgs/defect[] defects
+magician_msgs/Defect[] defects
 float64[] travel_times
 float64 max_time
 ---
-magician_msgs/defect[] roadmap
+magician_msgs/Defect[] roadmap
 float64[] service_times
