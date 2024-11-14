@@ -1,8 +1,9 @@
 # DISCLAIMER: this will not be the final messagge to describe a defect.
 # This is a temporary placeholder for demonstration purposes.
 
-uint8 number
-uint8 severity
 geometry_msgs/Pose location
-# Rework time is relevant to severity levels
-# float64 estimated_rework_time
+uint8 severity
+# Severity levels
+# 1 = class A
+# 2 = class B
+# 3 = class C
