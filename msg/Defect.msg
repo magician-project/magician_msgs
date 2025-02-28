@@ -1,8 +1,8 @@
-# Severity classes definition
-uint8 CLASS_A = 1
-uint8 CLASS_B = 2
-uint8 CLASS_C = 3
+# Message that encodes a defect on the car.
 
-uint8 severity
+uint8 SEVERITY_CLASS_A = 1  # enumeration value for a type-A defect.
+uint8 SEVERITY_CLASS_B = 2  # enumeration value for a type-B defect.
+uint8 SEVERITY_CLASS_C = 3  # enumeration value for a type-C defect.
 
-geometry_msgs/Pose location
+uint8 severity                      # severity class of the defect.
+geometry_msgs/PoseStamped location  # location of the defect. The reference frame of the data is embedded in the PoseStamped type.

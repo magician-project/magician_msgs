@@ -36,7 +36,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Build docs
-        run: make doc
+        run: make docs
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
