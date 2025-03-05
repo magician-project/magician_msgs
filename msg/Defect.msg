@@ -5,4 +5,4 @@ uint8 SEVERITY_CLASS_B = 2  # enumeration value for a type-B defect.
 uint8 SEVERITY_CLASS_C = 3  # enumeration value for a type-C defect.
 
 uint8 severity                      # severity class of the defect.
-geometry_msgs/PoseStamped location  # location of the defect. The reference frame of the data is embedded in the PoseStamped type.
+geometry_msgs/Pose location  # location of the defect. The reference frame of the data is embedded in the PoseStamped type.
