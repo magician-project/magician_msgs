@@ -1,16 +1,15 @@
-# DISCLAIMER: this will not be the final messagge to describe a defect.
-# This is a temporary placeholder for demonstration purposes.
+# Service that provides the optimal sequence of defects to be reworked as the solution of an orienteering problem
 
-uint8 NUM_ANT_COL = 1  # Ant colony algorithm.
-uint8 NUM_GUROBI = 2  # Gurobi
-uint8 NUM_GENETIC = 3  # Genetic algorithm.
-uint8 NUM_PROFIT_RATIO = 4 # Profit ratio search.
+uint8 ALGORITHM_ANT_COL = 1  # Ant colony algorithm.
+uint8 ALGORITHM_GUROBI = 2  # Gurobi
+uint8 ALGORITHM_GENETIC = 3  # Genetic algorithm.
+uint8 ALGORITHM_PROFIT_RATIO = 4 # Profit ratio search.
 
-magician_msgs/Defect[] defects
-float64[] travel_times
-float64 max_time
-float64 max_compute_time
-uint8 algorithm
+geometry_msgs/PoseStamped initial_pose  # starting end-effector configuration;
+magician_msgs/Defect[] defects          # list of scanned defect;
+float64 max_time                        # maximum time budget (in seconds) for the roadmap execution;
+float64 max_compute_time                # maximum time (in seconds) that the solver can use to find a solution;
+uint8 algorithm                         # algorithm to be used; see the constants exported by this message.
 ---
-magician_msgs/Defect[] roadmap
-float64[] service_times
+magician_msgs/Defect[] roadmap  # ordered sequence of defects to be reworked;
+float64[] service_times         # service time (in seconds) for each defect removal operation.
