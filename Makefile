@@ -10,8 +10,6 @@ MSGS_FILES = $(shell find . -name '*.msg') $(shell find . -name '*.srv')
 .PHONY: docs clean view venv pdf 
 
 docs: html
-	@echo "MD files: $(MD_FILES)"
-	@echo "msgs files: $(MSGS_FILES)"
 
 clean:
 	@echo "Removing files"
