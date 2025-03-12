@@ -4,6 +4,7 @@ uint8 ALGORITHM_ANT_COL = 1  # Ant colony algorithm.
 uint8 ALGORITHM_GUROBI = 2  # Gurobi
 uint8 ALGORITHM_GENETIC = 3  # Genetic algorithm.
 uint8 ALGORITHM_PROFIT_RATIO = 4 # Profit ratio search.
+uint8 ALGORITHM_BRANCH_BOUND = 5 # Branche and bound algorithm without the GURBOI liscense
 
 geometry_msgs/PoseStamped initial_pose  # starting end-effector configuration;
 magician_msgs/Defect[] defects          # list of scanned defect;
