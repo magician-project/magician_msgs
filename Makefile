@@ -25,7 +25,7 @@ autogen: $(MSGS_FILES)
 	@ $(ACTIVATE) && python3 process_messages.py
 	
 
-html: $(MD_FILES) autogen index.rst
+html: $(MD_FILES) autogen index.rst $(MSGS_FILES)
 	@echo "Building documentation"
 	$(ACTIVATE) && sphinx-build --conf-dir docs . html
 

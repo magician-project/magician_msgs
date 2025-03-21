@@ -1,0 +1,6 @@
+# Constructs a motion plan for the end effector given the an initial and a target pose
+
+geometry_msgs/PoseStamped y0    # initial pose
+geometry_msgs/PoseStamped g     # target pose
+---
+magician_msgs/CartesianMotionPlan plan  # resulting planned motion
