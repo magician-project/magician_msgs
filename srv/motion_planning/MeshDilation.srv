@@ -1,0 +1,8 @@
+# Dilates a mesh
+
+string mesh_path            # path to the mesh to be dilated
+float64 dilation_distance   # how much, in m, the mesh shall be dilated
+
+---
+bool success                # wether the operation was successfull or not
+string dilated_mesh_path    # path to the dilated mesh, stored in /tmp

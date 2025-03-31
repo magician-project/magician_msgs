@@ -27,6 +27,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/PointToPointTime.srv"
     "srv/motion_planning/PointToPointMotionPlan.srv"
     "srv/motion_planning/CartesianPlanExecution.srv"
+    "srv/motion_planning/MeshDilation.srv"
 )
 
 rosidl_generate_interfaces(
