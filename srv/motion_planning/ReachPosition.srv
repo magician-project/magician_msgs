@@ -1,0 +1,4 @@
+geometry_msgs/PoseStamped desired_pos
+float64 max_vel
+---
+bool success
