@@ -1,0 +1,11 @@
+geometry_msgs/PoseStamped[] points
+
+string mesh_path
+string mesh_link_name
+string base_link_name
+
+uint64 num_points
+
+---
+bool success
+geometry_msgs/PoseStamped[] path
