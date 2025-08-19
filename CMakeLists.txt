@@ -18,21 +18,19 @@ endforeach()
 # Set the custom magician messages paths
 set(MAGICIAN_MSGS
     "msg/Defect.msg"
-    "msg/CartesianMotionPlan.msg"
 )
 
 # Set the custom magician services paths
 set(MAGICIAN_SRVS
+    # Task planning
     "srv/task_planning/Orienteering.srv"
-    "srv/motion_planning/PointToPointTime.srv"
-    "srv/motion_planning/PointToPointMotion.srv"
-    "srv/motion_planning/PointToPointMotionPlan.srv"
-    "srv/motion_planning/CartesianPlanExecution.srv"
-    "srv/motion_planning/MeshDilation.srv"
-    "srv/motion_planning/MeshPointToPointMotionPlan.srv"
-    "srv/motion_planning/MeshPointToPointMotion.srv"
+
+    # Motion planning
     "srv/motion_planning/ReachPosition.srv"
-    "srv/motion_planning/MeshPath.srv"
+    "srv/motion_planning/PointToPointMotion.srv"
+    "srv/motion_planning/PointToPointTime.srv"
+    "srv/motion_planning/MeshPointToPointMotion.srv"
+    "srv/motion_planning/MeshDilation.srv"
 )
 
 rosidl_generate_interfaces(

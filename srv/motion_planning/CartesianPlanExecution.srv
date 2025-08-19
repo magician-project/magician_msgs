@@ -1,6 +1,0 @@
-# Service that requests the execution of a motion plan for the end-effector.
-# The plan could be accepted or rejected based on internal policies of the trajectory broadcaster.
-
-magician_msgs/CartesianMotionPlan plan
----
-bool plan_accepted

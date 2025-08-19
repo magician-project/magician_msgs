@@ -1,8 +1,7 @@
 # Executes an end effector point-to-point motion from an initial to a target pose on a given mesh.
 # Optionally, it can pre-pend a motion plan to reach such initial configuration.
 
-string mesh_path                # path to the mesh where the plan shall live
-string mesh_link_name           # name of the link associated to the mesh
+string mesh                     # mesh where the motion shall be planned on. See the :ref:`mesh-handling` guide in the documentation for more references
 geometry_msgs/PoseStamped y0    # initial pose
 geometry_msgs/PoseStamped g     # target pose
 float64 offset                  # offset, in meters, of the trajectory from the mesh

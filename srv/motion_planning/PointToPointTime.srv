@@ -1,9 +1,9 @@
 # Service that provides an estimate of the time to perform point-to-point motion to different poses.
 
-# Let "n" be the number of poses, this service builds a "n x n" time-transition matrix containing, where each entry "t[i, j]" contains the time (in seconds) required to move from pose "i" to pose "j".
+# Let :math:`n` be the number of poses, this service builds a :math:`t_{ij} = T \in \mathbb R^{n\times n}` time-transition matrix containing, where each entry :math:`t_{ij}` contains the time (in seconds) required to move from pose index _i_ to pose index _j_.
+# 
+# Internally, all poses are converted into a common reference frame.
 
-geometry_msgs/Pose[] poses
-string frame_id             # reference frame in which poses are defined;
-
+geometry_msgs/PoseStamped[] poses  # poses w.r.t. which compute the time-transition matrix
 ---
 std_msgs/Float64MultiArray time_transition_matrix
