@@ -8,6 +8,6 @@ float64 offset                  # offset, in meters, of the trajectory from the 
 float64 max_vel 0.25            # maximum velocity in m/s
 bool plan_y0_motion false       # wether a motion to reach y0 shall be executed or not
 float64 approach_vel 0.15      
-bool with_admittance false
+magician_msgs/ControlMode control_mode # which type of control to use to perform the motion
 ---
 bool success
