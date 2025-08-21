@@ -2,5 +2,6 @@
 
 float64 wait_sec 5.0                     # amount, in seconds, for which the position is hold
 magician_msgs/ControlMode control_mode   # which type of control to use to perform the motion
+magician_msgs/SanderControl sander       # commands for the sander to be executed at motion start
 ---
 bool success

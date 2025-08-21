@@ -6,5 +6,6 @@ geometry_msgs/PoseStamped g            # target pose
 float64 max_vel 0.25                   # maximum velocity in m/s
 bool plan_y0_motion false              # wether a motion to reach y0 shall be preplanned or not
 magician_msgs/ControlMode control_mode # which type of control to use to perform the motion
+magician_msgs/SanderControl sander     # commands for the sander to be executed at motion start
 ---
 bool success
