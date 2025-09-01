@@ -22,6 +22,7 @@ set(MAGICIAN_MSGS
     # Motion planning
     "msg/motion_planning/ControlMode.msg"
     "msg/motion_planning/SanderControl.msg"
+    "msg/motion_planning/CartesianMotionPlan.msg"
 )
 
 # Set the custom magician services paths
