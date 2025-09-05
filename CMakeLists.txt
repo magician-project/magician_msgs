@@ -32,6 +32,7 @@ set(MAGICIAN_SRVS
 
     # Motion planning
     "srv/motion_planning/ReachPosition.srv"
+    "srv/motion_planning/MeshReachPosition.srv"
     "srv/motion_planning/PointToPointMotion.srv"
     "srv/motion_planning/PointToPointTime.srv"
     "srv/motion_planning/MeshPointToPointMotion.srv"

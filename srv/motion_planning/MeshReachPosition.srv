@@ -1,0 +1,11 @@
+# Executes an end effector point-to-point motion from an initial to a target pose on a given mesh.
+# Optionally, it can pre-pend a motion plan to reach such initial configuration.
+
+string mesh                     # mesh where the motion shall be planned on. See the :ref:`mesh-handling` guide in the documentation for more references
+geometry_msgs/PoseStamped desired_pos   # configuration to reach
+float64 offset                  # offset, in meters, of the trajectory from the mesh
+float64 max_vel 0.25            # maximum velocity in m/s
+magician_msgs/ControlMode control_mode # which type of control to use to perform the motion
+magician_msgs/SanderControl sander     # commands for the sander to be executed at motion start
+---
+bool success
