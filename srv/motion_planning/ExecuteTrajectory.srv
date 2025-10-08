@@ -1,0 +1,11 @@
+# Executes a trajectory specified as a sequence of poses.
+# Optionally, it can pre-pend a motion plan to reach such initial configuration.
+
+string frame_link               # name of the link in which the trajectory is defined
+geometry_msgs/Pose[] path       # path to be executed
+bool plan_y0_motion true        # wether a motion to reach y0 shall be executed or not
+float64 approach_vel 0.15      
+magician_msgs/ControlMode control_mode # which type of control to use to perform the motion
+magician_msgs/SanderControl sander     # commands for the sander to be executed at motion start
+---
+bool success
