@@ -39,6 +39,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/MeshDilation.srv"
     "srv/motion_planning/HoldPosition.srv"
     "srv/motion_planning/ExecuteTrajectory.srv"
+    "srv/motion_planning/RhytmicDmpMotion.srv"
 )
 
 rosidl_generate_interfaces(

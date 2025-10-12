@@ -1,0 +1,14 @@
+# Learns a periodic motion in the operational space of the robot and appends it to the motion queue
+# Optionally, it can pre-pend a motion plan to reach such initial configuration.
+
+string frame_id                        # frame link where path is learned
+geometry_msgs/Pose[] poses             # demonstrated trajectory
+geometry_msgs/Pose g                   # centre of the DMP
+uint64 num_executions 1                # number of revolutions
+float64 max_vel 0.1                    # maximum velocity in m/s
+float64 approach_vel 0.1               # maximum velocity in m/s for approaching the initial point
+bool plan_y0_motion false              # wether a motion to reach y0 shall be preplanned or not
+magician_msgs/ControlMode control_mode # which type of control to use to perform the motion
+magician_msgs/SanderControl sander     # commands for the sander to be executed at motion start
+---
+bool success
