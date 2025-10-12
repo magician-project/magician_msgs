@@ -1,0 +1,8 @@
+# TODO: embed the frame_link argument
+geometry_msgs/Transform relative_motion # motion to execute
+# string frame_link                       # frame in which relative motion shall be applied. If empty, it is assumed to be the end-effector reference frame
+float64 max_vel 0.25
+magician_msgs/ControlMode control_mode  # which type of control to use to perform the motion
+magician_msgs/SanderControl sander      # commands for the sander to be executed at motion start
+---
+bool success
