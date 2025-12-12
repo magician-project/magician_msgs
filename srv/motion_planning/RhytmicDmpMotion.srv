@@ -4,6 +4,7 @@
 string frame_id                        # frame link where path is learned
 geometry_msgs/Pose[] poses             # demonstrated trajectory
 geometry_msgs/Pose g                   # centre of the DMP
+int64 num_basis 40                     # number of basis
 uint64 num_executions 1                # number of revolutions
 float64 max_vel 0.1                    # maximum velocity in m/s
 float64 max_angular_vel 0.2            # maximum angular velocity in rad/s
