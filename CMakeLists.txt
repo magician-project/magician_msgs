@@ -18,7 +18,8 @@ endforeach()
 # Set the custom magician messages paths
 set(MAGICIAN_MSGS
     "msg/Defect.msg"
-    
+    "msg/DefectPrediction.msg"
+
     # Motion planning
     "msg/motion_planning/ControlMode.msg"
     "msg/motion_planning/SanderControl.msg"
