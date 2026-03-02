@@ -23,6 +23,9 @@ set(MAGICIAN_MSGS
     "msg/motion_planning/ControlMode.msg"
     "msg/motion_planning/SanderControl.msg"
     "msg/motion_planning/CartesianMotionPlan.msg"
+
+    # Tactile detection
+    "msg/TactileDetection.msg"
 )
 
 # Set the custom magician services paths
