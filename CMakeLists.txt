@@ -42,6 +42,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/MeshDilation.srv"
     "srv/motion_planning/HoldPosition.srv"
     "srv/motion_planning/ExecuteTrajectory.srv"
+    "srv/motion_planning/ExecuteTrajectoryOnMesh.srv"
     "srv/motion_planning/RhytmicDmpMotion.srv"
     "srv/motion_planning/DiscreteDmpMotion.srv"
     "srv/motion_planning/MoveRelative.srv"
