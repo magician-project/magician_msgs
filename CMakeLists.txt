@@ -46,6 +46,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/RhytmicDmpMotion.srv"
     "srv/motion_planning/DiscreteDmpMotion.srv"
     "srv/motion_planning/MoveRelative.srv"
+    "srv/motion_planning/ProjectClosestPosition.srv"
 )
 
 rosidl_generate_interfaces(

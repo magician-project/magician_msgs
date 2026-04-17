@@ -1,0 +1,8 @@
+# Projects the current end-effector pose to the closest point on a given mesh.
+# The projected pose is expressed in the mesh link frame.
+
+string mesh                      # mesh where the projection shall be computed
+float64 offset 0.0              # optional mesh dilation offset, in meters
+---
+bool success
+geometry_msgs/PoseStamped projected_pos  # projected pose expressed in mesh link
