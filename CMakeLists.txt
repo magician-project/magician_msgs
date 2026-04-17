@@ -27,6 +27,11 @@ set(MAGICIAN_MSGS
 
     # Tactile detection
     "msg/TactileDetection.msg"
+
+    # Vision detection
+    "msg/Detection.msg"
+    "msg/DetectionM.msg"
+    "msg/Marker.msg"
 )
 
 # Set the custom magician services paths
@@ -43,6 +48,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/MeshDilation.srv"
     "srv/motion_planning/HoldPosition.srv"
     "srv/motion_planning/ExecuteTrajectory.srv"
+    "srv/motion_planning/ExecuteTrajectoryOnMesh.srv"
     "srv/motion_planning/RhytmicDmpMotion.srv"
     "srv/motion_planning/DiscreteDmpMotion.srv"
     "srv/motion_planning/MoveRelative.srv"
