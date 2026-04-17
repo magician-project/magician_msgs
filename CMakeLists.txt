@@ -26,6 +26,11 @@ set(MAGICIAN_MSGS
 
     # Tactile detection
     "msg/TactileDetection.msg"
+
+    # Vision detection
+    "msg/Detection.msg"
+    "msg/DetectionM.msg"
+    "msg/Marker.msg"
 )
 
 # Set the custom magician services paths
