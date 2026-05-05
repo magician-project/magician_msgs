@@ -1,7 +1,7 @@
 # TactileDetection.msg
 # Represents a tactile defect detection result for a time window
 
-float32 timewindow_start    # Start time of the analyzed window (seconds)
-float32 timewindow_end      # End time of the analyzed window (seconds)
+std_msgs/Header header    # Start time of the analyzed window (seconds)
+float32 timewindow_size_ms      # End time of the analyzed window (seconds)
 string type                 # Type of defect detected (e.g., "no defect", "defect", "NDA", "PDA")
 float32 probability         # Confidence/probability of the defect (0.0 to 1.0)
