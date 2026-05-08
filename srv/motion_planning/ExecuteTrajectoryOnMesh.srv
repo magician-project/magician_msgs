@@ -3,7 +3,8 @@
 
 string mesh                     # mesh where the motion shall be planned on. See the :ref:`mesh-handling` guide in the documentation for more references
 string frame_link               # name of the link in which the trajectory is defined
-geometry_msgs/Pose[] path       # path to be executed
+geometry_msgs/Point[] path      # position path to be executed
+float64 path_freq_hz            # frequency of the provided path (in Hz)
 float64 offset                  # offset, in meters, of the trajectory from the mesh
 bool plan_y0_motion true        # wether a motion to reach y0 shall be executed or not
 float64 approach_vel 0.15      
