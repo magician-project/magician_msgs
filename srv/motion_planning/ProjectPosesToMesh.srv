@@ -1,0 +1,8 @@
+# Takes as set of input poses and a corresponding mesh link, and returns a sequence of poses whose position is the closest point projection on the mesh, and the orientation z-axis normal to the surface itself.
+# Upon failure, the returned pose is left unchanged.
+
+geometry_msgs/PoseStamped[] poses  # input poses to be projected
+string[] mesh_links                # corresponding mesh link to project against; must match the size of "poses"
+---
+geometry_msgs/PoseStamped[] poses  # the projected poses on the mesh with z-axis normal to the surface
+bool[] success                     # boolean reporting whether the corresponding output pose has been succesfully projected

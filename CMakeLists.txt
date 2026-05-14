@@ -5,8 +5,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(MAGICIAN_MSGS_DEPENDENCIES
-    builtin_interfaces 
-    std_msgs  
+    builtin_interfaces
+    std_msgs
     geometry_msgs
 )
 
@@ -53,6 +53,7 @@ set(MAGICIAN_SRVS
     "srv/motion_planning/DiscreteDmpMotion.srv"
     "srv/motion_planning/MoveRelative.srv"
     "srv/motion_planning/ProjectClosestPosition.srv"
+    "srv/motion_planning/ProjectPosesToMesh.srv"
 )
 
 rosidl_generate_interfaces(
