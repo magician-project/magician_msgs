@@ -18,6 +18,7 @@ endforeach()
 # Set the custom magician messages paths
 set(MAGICIAN_MSGS
     "msg/Defect.msg"
+    "msg/DefectList.msg"
     "msg/DefectPrediction.msg"
 
     # Motion planning
